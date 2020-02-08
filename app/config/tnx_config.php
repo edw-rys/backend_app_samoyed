@@ -14,14 +14,14 @@ date_default_timezone_set('America/Guayaquil');
 define('LANG'               ,'es');
 
 // Ruta base de nuestro proyecto
-define("BASEPATH", IS_LOCAL ? '/template_tnx/' : '___PRODUCTION___');
+define("BASEPATH", IS_LOCAL ? '/backend_app_samoyed/' : '___PRODUCTION___');
 
 // Sal del sistema
 define('AUTH_SALT'          ,'TNX_UPP_@S5249A6');
 
 // Puerto y URL
 define('PORT'               , "81");
-define('URL'                , IS_LOCAL ?'http://127.0.0.1:'.PORT.BASEPATH :"__URL_PRODUCTION__");
+define('URL'                , IS_LOCAL ?'http://127.0.0.1:'.PORT.BASEPATH :"192.168.1.9".PORT.BASEPATH);
 
 // Las rutas de directorios y archivos
 define('DS'                 , DIRECTORY_SEPARATOR);
@@ -73,7 +73,7 @@ define('DB_NAME'            , 'db_fundation_tim');
 define('DB_USER'            , 'root');
 define('DB_PASS'            , 'root');
 define('DB_CHARSET'         , 'utf8');
-
+//Ykgv14~7
 // El controlador por defecto / el método por defecto / y el controlador de errores por defecto
 define('DEFAULT_CONTROLLER'      , 'home');
 define('DEFAULT_ERROR_CONTROLLER', 'error');

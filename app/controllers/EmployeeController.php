@@ -53,8 +53,8 @@ class EmployeeController
 
             $verify=$this->employeeModel->get(
                 [
-                    "condition" =>"id_employee=:id_employee",
-                    "params"    =>["id_employee"=>$_POST['dni']]
+                    "condition" =>"dni=:dni",
+                    "params"    =>["dni"=>$_POST['dni']]
                 ]
             );
             if(!empty( $verify)){
