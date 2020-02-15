@@ -77,6 +77,10 @@ class Tnx{
         // require_once CLASSES.'View.php';
         // require_once CLASSES.'Controller.php';
         require_once CLASSES.'Autoloader.php';
+        require_once './external/php-jwt-master/src/JWT.php';
+        require_once './external/php-jwt-master/src/ExpiredException.php';
+        require_once './external/php-jwt-master/src/BeforeValidException.php';
+        require_once './external/php-jwt-master/src/SignatureInvalidException.php';
         Autoloader::init();
         return;
     }

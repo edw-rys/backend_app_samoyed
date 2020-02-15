@@ -2,6 +2,13 @@ DROP DATABASE IF EXISTS db_fundation_tim;
 create database db_fundation_tim;
 use db_fundation_tim;
 
+create table user_(
+    id_user int auto_increment,
+    username varchar(20) not null,
+    password varchar(200),
+    PRIMARY KEY(id_user)
+);
+
 
 create table nacionality(
     id_nacionality int auto_increment,

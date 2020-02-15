@@ -21,7 +21,7 @@ define('AUTH_SALT'          ,'TNX_UPP_@S5249A6');
 
 // Puerto y URL
 define('PORT'               , "81");
-define('URL'                , IS_LOCAL ?'http://127.0.0.1:'.PORT.BASEPATH :"192.168.1.9".PORT.BASEPATH);
+define('URL'                , IS_LOCAL ?'http://127.0.0.1:'.PORT.BASEPATH :"192.168.1.29".PORT.BASEPATH);
 
 // Las rutas de directorios y archivos
 define('DS'                 , DIRECTORY_SEPARATOR);
@@ -34,6 +34,7 @@ define('CONFIG'             , APP.'config'.DS);
 define('CONTROLLERS'        , APP.'controllers'.DS);
 define('FUNCTIONS'          , APP.'functions'.DS);
 define('MODELS'             , APP.'models'.DS);
+define('HELPERS'            , APP.'helpers'.DS);
 
 define('TEMPLATES'          , ROOT.'templates'.DS);
 define('INCLUDES'           , TEMPLATES.'includes'.DS);
@@ -68,12 +69,12 @@ define('LDB_CHARSET'        , 'utf8');
 
 // Set para conexión en producción o servidor real
 define('DB_ENGINE'          , 'mysql');
-define('DB_HOST'            , '192.168.1.9');
+define('DB_HOST'            , '192.168.1.29');
 define('DB_NAME'            , 'db_fundation_tim');
 define('DB_USER'            , 'root');
 define('DB_PASS'            , 'root');
 define('DB_CHARSET'         , 'utf8');
-//Ykgv14~7
+
 // El controlador por defecto / el método por defecto / y el controlador de errores por defecto
 define('DEFAULT_CONTROLLER'      , 'home');
 define('DEFAULT_ERROR_CONTROLLER', 'error');
