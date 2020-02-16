@@ -50,7 +50,6 @@ class EmployeeController
                     "status"=>"error"
                 ];
         }else{
-
             $verify=$this->employeeModel->get(
                 [
                     "condition" =>"dni=:dni",

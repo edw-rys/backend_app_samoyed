@@ -17,6 +17,10 @@ class ValidateField{
     private static $expUsername     = "/^[a-z0-9ü][a-z0-9ü_]{3,15}$/";
     private static $regexobjPrepare = "/^[a-zA-Z0-9üáéíóú][a-zA-Z0-9ü+ _.,:;áéíóú-]{3,900}$/";
     private static $regexp_password = "/^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{6,16}$/";
+
+    public static function notrRudeness(){
+        
+    }
     public static function validateUser($params=[], $id_user=0){
         $data =[
             "status"=>"success",
